@@ -103,7 +103,7 @@ public class Exhibit implements Comparable<Exhibit>, Searchable {
 	 */
 	@Override
 	public boolean fitsSearch(String s) {
-		if (s.equals(id) || s.equalsIgnoreCase(name)
+		if (s.equals(id.toString()) || s.equalsIgnoreCase(name)
 				|| s.equalsIgnoreCase(description)) {
 			return true;
 		}

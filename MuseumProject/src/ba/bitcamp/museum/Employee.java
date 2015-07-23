@@ -80,7 +80,7 @@ public class Employee implements Searchable {
 	@Override
 	public boolean fitsSearch(String s) {
 		if (s.equalsIgnoreCase(firstName) || s.equalsIgnoreCase(lastName)
-				|| s.equals(yearsWorking) || s.equals(pay)) {
+				|| s.equals(yearsWorking.toString()) || s.equals(pay.toString())) {
 			return true;
 		}
 		return false;
